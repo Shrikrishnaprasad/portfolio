@@ -549,15 +549,26 @@ of hard work and smart work in my career.
               Selvapuram, Coimbatore - 641026
             </span>
           </div>
+<form action="https://formsubmit.co/sgkrishna619@gmail.com" method="post" class="contact__form" onsubmit="emailSubmit()">
+<input type="hidden" name="_template" value="table">
 
-          <form action="mailto:sgkrishna619@gmail.com" method="post" enctype="text/plain" class="contact__form">
+
+          <!-- <input type="hidden" name="_captcha" value="false"> -->
+<input type="hidden" name="_subject" value="Portfolio!">
+<input type="hidden" name="_next" value="https://shrikrishnaprasad-portfolio.netlify.app">
+<input type="hidden" name="_autoresponse" value="Thank you for your Email! I will respond as soon as possible">
+
+
+
+
+
             <div class="contact__inputs">
-              <input type="text" placeholder="Name" class="contact__input" name="name" />
-              <input type="mail" placeholder="Email" class="contact__input" name="mail" />
+              <input type="text" placeholder="Name" class="contact__input" id="name" name="name" required />
+              <input type="email" placeholder="Email" class="contact__input" id="email" name="email" required />
             </div>
 
             <textarea
-              name="comment"
+              name="message"
               id=""
               cols="0"
               rows="5"
@@ -565,7 +576,7 @@ of hard work and smart work in my career.
               placeholder="Message"
             ></textarea>
 
-            <input type="submit" value="Send" class="contact__button" />
+            <button type="submit" class="contact__button">Send</button>
           </form>
         </div>
       </section>
@@ -609,5 +620,10 @@ of hard work and smart work in my career.
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+    <script>
+function emailSubmit() {
+  alert("Thank you for your Email!");
+}
+</script>
   </body>
 </html>
